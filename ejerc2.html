@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio_2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+        }
+
+        header>h1 {
+            margin: 1%;
+            padding: 4%;
+            flex: 2;
+            background-color: rgb(251, 60, 54);
+        }
+
+        header>form {
+            margin: 1%;
+            padding: 4%;
+            flex: 1;
+            background-color: rgb(251, 60, 54);
+        }
+
+        main {
+            display: flex;
+        }
+
+        main>nav {
+            flex: 1;
+            margin: 1%;
+            padding: 10%;
+            background-color: #ecbf0f;
+        }
+
+        main>article {
+            flex: 2;
+            margin: 1%;
+        }
+
+        main>article>p:first-of-type {
+            margin: 0 0 2% 0;
+            padding: 10%;
+            background-color: #8e045b;
+        }
+
+        main>article>p:last-of-type {
+            margin: 4% 0 0 0;
+            padding: 10%;
+            background-color: #8e045b;
+        }
+
+        footer {
+            display: flex;
+        }
+
+        footer>p {
+            margin: 1%;
+            padding: 4%;
+            flex: 1;
+            background-color: #00728f;
+        }
+
+        footer>figure {
+            margin: 1%;
+            padding: 4%;
+            flex: 1;
+            background-color: #00728f;
+        }
+
+        /* CUANDO EL ANCHO SEA INFERIOR A 700PX */
+        @media screen and (max-width:700px) {
+
+            header,
+            main,
+            footer {
+                display: inline;
+            }
+
+            main>article>p:last-of-type {
+                margin: 0;
+            }
+
+            main>article>p:first-of-type {
+                margin: 1% 0 1% 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+        <form action=""></form>
+    </header>
+    <main>
+        <nav></nav>
+        <article>
+            <p></p>
+            <p></p>
+        </article>
+    </main>
+    <footer>
+        <p></p>
+        <figure></figure>
+        <p></p>
+    </footer>
+</body>
+
+</html>

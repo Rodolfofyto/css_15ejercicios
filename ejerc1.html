@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio_1</title>
+    <style>
+        h1,
+        header,
+        aside,
+        main,
+        footer {
+            margin: 1%;
+            padding: 3%;
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        header {
+            background-color: rgb(245, 90, 90);
+        }
+
+        aside {
+            background-color: #2c2cf2;
+            flex: 1;
+        }
+
+        main {
+            background-color: #37f1f1;
+            flex: 1;
+        }
+
+        footer {
+            background-color: #e12fc9;
+        }
+
+        div {
+            display: flex;
+        }
+
+        /* CUANDO EL ANCHO SEA INFERIOR A 700PX */
+        @media screen and (max-width:700px) {
+            div {
+                display: inline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejemplo de Media Queries</h1>
+    <header>HEADER</header>
+    <div>
+        <aside>ASIDE </aside>
+        <main>MAIN</main>
+    </div>
+    <footer>FOOTER</footer>
+</body>
+
+</html>
